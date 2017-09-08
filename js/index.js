@@ -7,7 +7,7 @@ var breakS = 0;
 var timerInterv;
 var outMins, outSecs;
 var breakInterv;
-var audio = new Audio('https://s0.vocaroo.com/media/download_temp/Vocaroo_s0mjFIESkpa2.mp3');
+var audio = new Audio('./assets/Vocaroo_s0mjFIESkpa2.mp3');
 audio.playbackRate = 2;
 audio.loop = false;
 //write the defaul values of session and break to the page to serve as reference
@@ -15,9 +15,9 @@ document.getElementById("breakM").innerHTML = breakM + " m";
 document.getElementById("sessionM").innerHTML = sessionM + " m";
 document.getElementById("clock").innerHTML = sessionM + "m " + 0 + "s ";
 
-//decrease break minutes, do not allow it to go below 1
+//decrease break minutes, do not allow it to go below 1;
 document.getElementById("lessB").addEventListener("click", function() {
-  if (breakM = 1) {
+  if (breakM == 1) {
     document.getElementById("breakM").innerHTML = breakM + " m";
   } else {
     breakM--;
@@ -33,8 +33,8 @@ document.getElementById("moreB").addEventListener("click", function() {
 
 //decrease session minutes, do not allow it to go below 1
 document.getElementById("lessS").addEventListener("click", function() {
-  if (sessionM = 1) {
-    document.getElementById("breakM").innerHTML = breakM + " m";
+  if (sessionM == 1) {
+    document.getElementById("sessionM").innerHTML = sessionM + " m";
   } else {
     sessionM--;
     document.getElementById("sessionM").innerHTML = sessionM + " m";
