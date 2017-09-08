@@ -1,0 +1,117 @@
+/* http://paletton.com/#uid=33s0u0kqHwcgyIylMACvvs8y3lW */
+
+body {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: #2178A2;
+}
+
+h1 {
+  text-align: center;
+}
+
+.configuration {
+  width: 50%;
+  margin: auto;
+}
+
+.breakTime {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.sessionTime {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 50px;
+  clear: both;
+  text-align: center;
+  display: inline-block;
+}
+
+.button {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.playBtn {
+  background-color: #5cb85c;
+}
+
+.pauseBtn {
+  background-color: #f0ad4e;
+}
+
+.resumeBtn {
+  background-color: #5bc0de;
+}
+
+.resetBtn {
+  background-color: #d9534f;
+}
+
+.clock {
+  text-align: center;
+  margin: 25px auto;
+  padding: 25px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #FFC42A;
+  font-size: 17px;
+}
+
+.clockRot {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+hr {
+  margin-top: 75px;
+  width: 25%;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+.btnDis {
+  display: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+  hr {
+    margin-top: 60px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  hr {
+    margin-top: 60px;
+    width: 75%;
+  }
+}
