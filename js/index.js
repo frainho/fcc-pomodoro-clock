@@ -8,7 +8,7 @@ var timerInterv;
 var outMins, outSecs;
 var breakInterv;
 var audio = new Audio('https://s0.vocaroo.com/media/download_temp/Vocaroo_s0mjFIESkpa2.mp3');
-audio.playbackRate = 2; 
+audio.playbackRate = 2;
 audio.loop = false;
 //write the defaul values of session and break to the page to serve as reference
 document.getElementById("breakM").innerHTML = breakM + " m";
@@ -71,7 +71,7 @@ function doCountDown() {
       secs--;
       if (secs <= 0) {
         // if the seconds finish, we sound the alarm, display the final value, reset the values so there is no interference and call the break function with 1s interval
-        audio.playbackRate = 4; 
+        audio.playbackRate = 4;
         audio.loop = false;
         audio.play();
         document.getElementById("clock").innerHTML = 0 + "m " + 0 + "s ";
@@ -89,15 +89,15 @@ function doCountDown() {
 
 function doBreakCDown() {
   if (stop) {
-    
+
     return;
   } else {
     if (!pause) {
       //check if pause is false so it does nothing despite the function is still running
       breakS--;
       if (breakS <= 0) {
-     // if the seconds finish, we sound the alarm, display the final value, reset the values so there is no interference and call the countdown function with 1s interval
-        audio.playbackRate = 4; 
+        // if the seconds finish, we sound the alarm, display the final value, reset the values so there is no interference and call the countdown function with 1s interval
+        audio.playbackRate = 4;
         audio.loop = false;
         audio.play();
         document.getElementById("clock").innerHTML = 0 + "m " + 0 + "s ";
@@ -111,9 +111,9 @@ function doBreakCDown() {
         outMins + "m " + outSecs + "s ";
     }
   }
-  
-  
-  
+
+
+
 
 }
 //pause/resume functions with eventlistners
